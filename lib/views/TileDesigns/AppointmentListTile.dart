@@ -38,9 +38,11 @@ class AppointmentListTile extends ListTile {
                     ),
                   ],
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
                     TextButton.icon(
                       icon: Icon(
                         Icons.chat_rounded,
@@ -100,10 +102,15 @@ class AppointmentListTile extends ListTile {
                       },
                     )
                   ],
+                ),
                 )
               ],
             ),
-            leading: Column(children: [
+            leading: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
               Text(
                   appointmentDataModel.date[0] +
                       appointmentDataModel.date[1] +
@@ -123,5 +130,6 @@ class AppointmentListTile extends ListTile {
                     fontSize: 18.0),
               ),
               Text(appointmentDataModel.time),
-            ]));
+            ]),
+          ));
 }

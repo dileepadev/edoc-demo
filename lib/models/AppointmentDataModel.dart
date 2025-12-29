@@ -1,9 +1,9 @@
 class AppointmentDataModel {
   AppointmentDataModel({
-    this.name,
-    this.title,
-    this.date,
-    this.time,
+    required this.name,
+    required this.title,
+    required this.date,
+    required this.time,
   });
 
   final String name;

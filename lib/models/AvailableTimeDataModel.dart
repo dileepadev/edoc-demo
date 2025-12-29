@@ -7,17 +7,17 @@ class ChoiceChipData {
   Color selectedColor;
 
   ChoiceChipData({
-    @required this.label,
-    @required this.isSelected,
-    @required this.textColor,
-    @required this.selectedColor,
+    required this.label,
+    required this.isSelected,
+    required this.textColor,
+    required this.selectedColor,
   });
 
   ChoiceChipData copy({
-    String label,
-    bool isSelected,
-    Color textColor,
-    Color selectedColor,
+    String? label,
+    bool? isSelected,
+    Color? textColor,
+    Color? selectedColor,
   }) =>
       ChoiceChipData(
         label: label ?? this.label,

@@ -24,10 +24,12 @@ class AppointmentDetails extends StatelessWidget {
       ),
       bottomNavigationBar: BottomAppBar(
         color: Colors.blue,
-        child: FlatButton(
-          color: Colors.blue,
-          textColor: Colors.white,
-          padding: EdgeInsets.all(10.0),
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+            padding: EdgeInsets.all(10.0),
+          ),
           onPressed: () {
             print("Cancel Appointment Clicked");
           },

@@ -125,14 +125,15 @@ class Prescription extends StatelessWidget {
                 ),
               ),
               color: Colors.grey.shade300,
-              height: 60.0,
               width: double.infinity,
             ),
             Padding(
               padding: const EdgeInsets.all(16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
                   SizedBox(width: 12),
                   Image.asset(
                     'assets/images/edoc_prescription.png',
@@ -140,13 +141,15 @@ class Prescription extends StatelessWidget {
                     width: 100,
                   ),
                   SizedBox(width: 15),
-                  FlatButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                      ),
+                      backgroundColor: Colors.blue,
+                      foregroundColor: Colors.white,
+                      padding: EdgeInsets.all(10.0),
                     ),
-                    color: Colors.blue,
-                    textColor: Colors.white,
-                    padding: EdgeInsets.all(10.0),
                     onPressed: () {
                       print("UPLOAD CLICKED");
                     },
@@ -159,12 +162,13 @@ class Prescription extends StatelessWidget {
                   ),
                 ],
               ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 width: double.infinity,
-                height: 160,
+                height: 200,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
@@ -173,12 +177,16 @@ class Prescription extends StatelessWidget {
                         fit: BoxFit.cover,),),
                 padding: EdgeInsets.only(top: 80.0),
                 child: Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      FlatButton(
-                        textColor: Colors.white,
-                        padding: EdgeInsets.all(10.0),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.all(10.0),
+                        ),
                         onPressed: () {
                           print("CAMERA CLICKED");
                         },
@@ -202,9 +210,11 @@ class Prescription extends StatelessWidget {
                           ],
                         ),
                       ),
-                      FlatButton(
-                        textColor: Colors.white,
-                        padding: EdgeInsets.all(10.0),
+                      TextButton(
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.all(10.0),
+                        ),
                         onPressed: () {
                           print("GALLERY CLICKED");},
                         child: Column(
@@ -228,6 +238,7 @@ class Prescription extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
                   ),
                   color: Colors.black.withOpacity(0.55),
                 )
