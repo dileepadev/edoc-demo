@@ -17,9 +17,9 @@ The **eDoc Demo** mobile application is designed as an example of a medical appl
 
 Click the link or image below to view the demo video on YouTube.
 
-🔗 <https://youtu.be/M0syZuxhbY>
+🔗 <https://youtu.be/lYhdtlcxQLA>
 
-[![Watch the demo video](https://img.youtube.com/vi//0.jpg)](https://youtu.be/)
+[![Watch the demo video](https://img.youtube.com/vi/lYhdtlcxQLA/0.jpg)](https://youtu.be/lYhdtlcxQLA)
 
 ## 📦 Release Details
 
@@ -30,7 +30,7 @@ Initial release date - April 4, 2021
 > This repository is a clean re-upload to my new GitHub account. No new features or functionality have been added. Minor compatibility fixes may have been applied to ensure the project runs correctly in the current environment. Please note that the original commit history from the previous account is not preserved. This update is primarily for migration purposes.
 >
 > **Initial release date:** April 4, 2021  
-> **Migration date:** December 28, 2025
+> **Migration date:** December 29, 2025
 
 ## 💡 Deployment
 
